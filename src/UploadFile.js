@@ -15,7 +15,7 @@ import axios from 'axios';
 
         const data = new FormData();
         data.append('file', file);
-        axios.post('//localhost:3000/upload', data)
+        axios.post('https://main.dixpz34edvvvb.amplifyapp.com/upload', data)
         .then((e) => {
             console.log('success');
             onSuccess(e.data);

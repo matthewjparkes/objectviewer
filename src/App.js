@@ -64,7 +64,7 @@ const App = () => {
   loader.load(
     // resource URL
     // `//localhost:3000/${files.filename}`,
-    (!files?'bag.obj': `//localhost:3000/${files}`),
+    (!files?'bag.obj': `https://main.dixpz34edvvvb.amplifyapp.com/${files}`),
    
     // onLoad callback
     // Here the loaded data is assumed to be an object
