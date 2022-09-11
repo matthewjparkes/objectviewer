@@ -58,7 +58,9 @@ const App = () => {
   loader.load(
     // resource URL
     // `//localhost:3000/${files.filename}`,
-    (!files?'bag.obj': `//localhost:3000/${files}`),
+//    Code to change files (!files?'bag.obj': `//localhost:3000/${files}`),
+    
+    'bag.obj',
    
     // onLoad callback
     // Here the loaded data is assumed to be an object
