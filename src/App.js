@@ -45,16 +45,10 @@ const App = () => {
   controls.update();
 
   //Adding Box
-  const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-  const wireframe = new THREE.WireframeGeometry( geometry );
-  const line = new THREE.LineSegments( wireframe );
-        line.material.depthTest = false;
-        line.material.opacity = 0.25;
-        line.material.transparent = true;
-  scene.add( line );
+
 
   // Adding Light
-  const ambient =  new THREE.AmbientLight( 0xCABFBC );
+  const ambient =  new THREE.AmbientLight( 0xffffff );
   scene.add(ambient);
   const loader = new OBJLoader();
   camera.position.z = 10;
@@ -103,8 +97,10 @@ const App = () => {
   return (
 
     <div ref={mountRef} >
+      <div className='h-3/6 absolute w-3/6 bottom-0' >
       <UploadFile onSuccess={onSuccess} />
-      <button onClick={WireFrameToggle}>WireFrame Toggle</button>
+      <button className='bg-white absolute bottom-8'onClick={WireFrameToggle}>WireFrame Toggle</button>
+      </div>
 
     </div>
   )
