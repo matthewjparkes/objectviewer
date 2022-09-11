@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/models": {
+      "name": "/models",
+      "lambdaFunction": "objectviewer84973c75",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
